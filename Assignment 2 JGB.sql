@@ -13,6 +13,8 @@ insert into person(pid,pname,address)
 
 #2.increase the salary of employee by 10% whose job is 'Manager'
 select payment_id,payment_date,amount+'10%' as'Increased Amount' from sakila.payment;
+select payment_id,payment_date,amount*.10 as'Increased Amount' from sakila.payment;
+
 
 #3. delete all the records in student table
 set sql_safe_updates=0;
